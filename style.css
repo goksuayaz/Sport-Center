@@ -86,59 +86,6 @@ nav img {
     transition: 0.7s;
 }
 
-.hamburger {
-    display: block;
-    position: relative;
-    width: 35px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    outline: none;
-    border: none;
-}
-
-.hamburger {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    width: 35px;
-    height: 30px;
-    background-color: transparent;
-    border: none;
-}
-
-.hamburger .bar {
-    display: block;
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: #333;
-    transition: all 0.3s ease-in-out;
-}
-
-.hamburger .bar:nth-child(1) {
-    top: 0px;
-}
-
-.hamburger .bar:nth-child(2), .hamburger .bar:nth-child(3) {
-    top: 13px;
-}
-
-.hamburger .bar:nth-child(3) {
-    top: 26px;
-}
-
-.hamburger.is-active .bar:nth-child(1) {
-    transform: translateY(13px) rotate(45deg);
-}
-
-.hamburger.is-active .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.is-active .bar:nth-child(3) {
-    transform: translateY(-13px) rotate(-45deg);
-}
 
 .mobile-nav {
     position: fixed;
