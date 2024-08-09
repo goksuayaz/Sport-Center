@@ -1,5 +1,4 @@
 window.onload = function () {
-    const menuBtn = document.querySelector('.hamburger');
     const mobileMenu = document.querySelector('.mobile-nav');
     const nav = document.querySelector('.navigation');
 
@@ -36,12 +35,12 @@ const content2 = `
 <div id="btn2-content" class="classes-hero">
 
 <div class="info-img">
-    <img src="images/group.webp" alt="">
+    <img src="https://navroopyoga.com/wp-content/uploads/2019/11/groupyoga1.jpg" alt="">
 </div>
 
 <div class="info-yoga">
-    <h1>Yoga with Our Group</h1>
-    <p>Join our group yoga sessions and experience the synergy of practicing with others. These sessions are perfect for those who thrive in a community setting, providing support and motivation as you deepen your practice together.</p>
+    <h1>Why are your Yoga?</h1>
+    <p>Lorem ipsum dolar sit amet constectur adipisicing elit. Parlatur passimus valuptatum impedit odit perderendis dolarum pleaceat, exercitationem in afficia autem molares ab nostrum laboriosam sapiente nulla totam neque eum veniam.</p>
 
     <h1>Group Yoga Schedule</h1>
     <p id="week-program">
@@ -56,8 +55,8 @@ const content2 = `
 const content3 = `<div id="btn3" class="classes-hero">
 
 <div class="info-yoga">
-    <h1>For Those Who Prefer to Work Solo</h1>
-    <p>Embrace the tranquility of solo yoga sessions at POWERFULL. Tailor your workout to your personal pace and preferences, enjoying a peaceful environment where you can focus on self-improvement and mindfulness without distractions.</p>
+    <h1>Why are your Yoga?</h1>
+    <p>Lorem ipsum dolar sit amet constectur adipisicing elit. Parlatur passimus valuptatum impedit odit perderendis dolarum pleaceat, exercitationem in afficia autem molares ab nostrum laboriosam sapiente nulla totam neque eum veniam.</p>
 
     <h1>Personal Yoga Schedule</h1>
     <p id="week-program">
@@ -69,19 +68,19 @@ const content3 = `<div id="btn3" class="classes-hero">
 
 
 <div class="info-img">
-    <img src="images/solo.jpg" alt="">
+    <img src="https://media.self.com/photos/5b7c4e70ecbb7f4c41c77333/master/w_320%2Cc_limit/dancers-pose-beginner-yoga.jpg" alt="">
 </div>
 </div>`;
 
 const content4 = `<div id="btn4" class="classes-hero">
 
 <div class="info-img">
-    <img src="images/stret.webp" alt="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5yWNwW30gyybVatgQ3hq4vP9rlcdYS3qsUQ&s" alt="">
 </div>
 
 <div class="info-yoga">
-    <h1>Stretching Sessions</h1>
-    <p>Unlock your full range of motion with our guided stretching sessions at POWERFULL. Ideal for all fitness levels, these sessions are designed to improve flexibility, reduce muscle tension, and enhance overall mobility.</p>
+    <h1>Why are your Yoga?</h1>
+    <p>Lorem ipsum dolar sit amet constectur adipisicing elit. Parlatur passimus valuptatum impedit odit perderendis dolarum pleaceat, exercitationem in afficia autem molares ab nostrum laboriosam sapiente nulla totam neque eum veniam.</p>
 
     <h1>Stretching Session Schedule</h1>
     <p id="week-program">
@@ -90,7 +89,6 @@ const content4 = `<div id="btn4" class="classes-hero">
         <br>Sunday: 11:00am - 12:30pm
     </p>
 </div>
-
 
 </div>`;
 
@@ -135,22 +133,22 @@ const galaxyFold = window.matchMedia("(max-width: 360px)");
 
 function calculateBMI() {
     let bmi = yourWeight.value / ((yourHeight.value / 100) * (yourHeight.value / 100));
-    
+
 
     let bmiRanges = [
-        {min: 0, max: 18.5, text: "Underweight", minPercentage: 9, maxPercentage: 24},
-        {min: 18.5, max: 24.9, text: "Normal", minPercentage: 25, maxPercentage: 40},
-        {min: 25, max: 29.9, text: "Overweight", minPercentage: 42, maxPercentage: 57},
-        {min: 30, max: 35, text: "Obese", minPercentage: 58, maxPercentage: 73},
-        {min: 35, max: 40, text: "Extremely Obese", minPercentage: 75, maxPercentage: 89},
-        {min: 40, max: 100, text: "Dead", minPercentage: 89, maxPercentage: 89}
+        { min: 0, max: 18.5, text: "Underweight", minPercentage: 9, maxPercentage: 24 },
+        { min: 18.5, max: 24.9, text: "Normal", minPercentage: 25, maxPercentage: 40 },
+        { min: 25, max: 29.9, text: "Overweight", minPercentage: 42, maxPercentage: 57 },
+        { min: 30, max: 35, text: "Obese", minPercentage: 58, maxPercentage: 73 },
+        { min: 35, max: 40, text: "Extremely Obese", minPercentage: 75, maxPercentage: 89 },
+        { min: 40, max: 100, text: "Dead", minPercentage: 89, maxPercentage: 89 }
     ];
 
     let bmiRangesForMax360px = [
         { min: 0, max: 18, text: "Underweight", minPercentage: 24, maxPercentage: 34 },
         { min: 18.5, max: 24.9, text: "Normal", minPercentage: 35, maxPercentage: 44 },
         { min: 25, max: 29.9, text: "Overweight", minPercentage: 45, maxPercentage: 54 },
-        { min: 30, max: 35, text: "Obese",  minPercentage: 55, maxPercentage: 64 },
+        { min: 30, max: 35, text: "Obese", minPercentage: 55, maxPercentage: 64 },
         { min: 35, max: 40, text: "Extremely Obese", minPercentage: 66, maxPercentage: 75 },
         { min: 40, max: 100, text: "Dead", minPercentage: 75, maxPercentage: 75 }
     ];
@@ -162,7 +160,7 @@ function calculateBMI() {
             range.minPercentage = bmiRangesForMax360px[index].minPercentage;
             range.maxPercentage = bmiRangesForMax360px[index].maxPercentage;
         });
-    }else{
+    } else {
         bmiRanges.forEach((range, index) => {
             range.min = bmiRanges[index].min;
             range.max = bmiRanges[index].max;
@@ -171,15 +169,15 @@ function calculateBMI() {
         });
     }
 
-    if  (bmi < 0 || bmi > 100){
+    if (bmi < 0 || bmi > 100) {
         bmiText.innerHTML = "Please enter a valid weight and height";
     }
-    else{
-    let bmiRange = bmiRanges.find(range => bmi >= range.min && bmi < range.max);
-    let leftPercentage = ((bmi - bmiRange.min) / (bmiRange.max - bmiRange.min)) * (bmiRange.maxPercentage - bmiRange.minPercentage) + bmiRange.minPercentage;
+    else {
+        let bmiRange = bmiRanges.find(range => bmi >= range.min && bmi < range.max);
+        let leftPercentage = ((bmi - bmiRange.min) / (bmiRange.max - bmiRange.min)) * (bmiRange.maxPercentage - bmiRange.minPercentage) + bmiRange.minPercentage;
 
-    bmiText.innerHTML = Math.round(bmi) + " " + bmiRange.text;
-    triangle.style.setProperty('--bmi-position', leftPercentage + '%');
+        bmiText.innerHTML = Math.round(bmi) + " " + bmiRange.text;
+        triangle.style.setProperty('--bmi-position', leftPercentage + '%');
     }
 
 }
@@ -188,31 +186,31 @@ yourHeight.addEventListener("input", calculateBMI);
 yourWeight.addEventListener("input", calculateBMI);
 
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => { 
-    anchor.addEventListener('click', function (e) { 
-        e.preventDefault(); 
-        const targetElement =  
-              document.querySelector(this.getAttribute('href')); 
-        window.scrollTo({ 
-            top: targetElement.offsetTop, 
-            behavior: 'smooth' 
-        }); 
-    }); 
-}); 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetElement =
+            document.querySelector(this.getAttribute('href'));
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+        });
+    });
+});
 
 
 function initMap() {
-    var courthouse = {lat: 36.8841, lng: 30.7036};  
+    var courthouse = { lat: 36.8841, lng: 30.7036 };
     var map = new google.maps.Map(document.getElementById('google-maps-canvas'), {
-      zoom: 16,
-      center: courthouse
+        zoom: 16,
+        center: courthouse
     });
     var marker = new google.maps.Marker({
-      position: courthouse,
-      map: map
+        position: courthouse,
+        map: map
     });
-  }
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    initMap();  
-  });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    initMap();
+});
