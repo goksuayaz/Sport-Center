@@ -60,9 +60,9 @@ const content3 = `<div id="btn3" class="classes-hero">
 
     <h1>Personal Yoga Schedule</h1>
     <p id="week-program">
-        Monday & Wednesday: 7:00am - 9:00am
-        <br>Thursday: 12:00pm - 2:00pm
-        <br>Saturday: 4:00pm - 6:00pm
+        Sunday: 9:00am - 11:00am
+        <br>Wednesday: 7:00am - 9:00am
+        <br>Friday: 6:00pm - 8:00pm
     </p>
 </div>
 
@@ -84,9 +84,9 @@ const content4 = `<div id="btn4" class="classes-hero">
 
     <h1>Stretching Session Schedule</h1>
     <p id="week-program">
-        Tuesday & Thursday: 6:30pm - 8:00pm
-        <br>Friday: 8:00am - 9:30am
-        <br>Sunday: 11:00am - 12:30pm
+        Sunday: 9:00am - 11:00am
+        <br>Wednesday: 7:00am - 9:00am
+        <br>Friday: 6:00pm - 8:00pm
     </p>
 </div>
 
@@ -198,19 +198,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
-function initMap() {
-    var courthouse = { lat: 36.8841, lng: 30.7036 };
-    var map = new google.maps.Map(document.getElementById('google-maps-canvas'), {
-        zoom: 16,
-        center: courthouse
-    });
-    var marker = new google.maps.Marker({
-        position: courthouse,
-        map: map
-    });
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-    initMap();
-});
