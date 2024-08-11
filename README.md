@@ -1,0 +1,1 @@
+https://powerfullsc.netlify.app/
